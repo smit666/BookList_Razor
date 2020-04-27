@@ -24,6 +24,7 @@
                     <tr class="table-secondary">
                         <th><label asp-for="Books.FirstOrDefault().Name"></label></th>
                         <th><label asp-for="Books.FirstOrDefault().Author"></label></th>
+                        <th><label asp-for="Books.FirstOrDefault().ISBN"></label></th>
                         <th></th>
                     </tr>
 
@@ -33,6 +34,7 @@
                             <tr>
                                 <td>@item.Name</td>
                                 <td>@item.Author</td>
+                                <td>@item.ISBN</td>
                                 <td><button class="btn btn-danger btn-sm text-white">Delete</button>
                                 <a class="btn btn-success btn-sm text-white">Edit</a>
                                 </td>
